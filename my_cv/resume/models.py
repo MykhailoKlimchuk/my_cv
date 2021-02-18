@@ -1,7 +1,6 @@
 from django.db import models
 
 
-
 class PersonInfo(models.Model):
     full_name = models.CharField("Ім'я", max_length=200)
     birthday = models.DateField("День народження")
@@ -28,3 +27,14 @@ class Experience(models.Model):
     description_of_responsibilities = models.TextField("Опис обовязків")
     start_work_date = models.DateField("Початок роботи")
     finish_work_date = models.DateField("Кінець роботи")
+
+
+class Study(models.Model):
+    person_info = models.ForeignKey(PersonInfo, verbose_name="Інформація про людину", on_delete=models.CASCADE)
+    study_place_name = models.CharField("Назва місця навчання", max_length=200)
+    specialty_name = models.CharField("Спеціальність", max_length=200)
+    finish_level = models.CharField("Рівень після закінчення", max_length=200)
+    start_study_date = models.DateField("Початок навчання")
+    finish_study_date = models.DateField("Кінець навчання")
+
+
