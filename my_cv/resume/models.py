@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import RegexValidator
 
 
 class PersonInfo(models.Model):
@@ -6,6 +7,11 @@ class PersonInfo(models.Model):
     birthday = models.DateField("День народження")
     main_image = models.ImageField("Головне фото", upload_to="resume_main_photo/")
     about_me = models.TextField("Про мене")
+    phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$')
+    phone_number = models.CharField("Телефон", validators=[phone_regex], max_length=17, blank=True)
+    email = models.EmailField("Пошта")
+    github = models.CharField("github", max_length=200)
+    linkedin = models.CharField("linkedin", max_length=200)
 
     def __str__(self):
         return self.full_name
