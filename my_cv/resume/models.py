@@ -44,3 +44,7 @@ class Study(models.Model):
     finish_study_date = models.DateField("Кінець навчання")
 
 
+class Contact(models.Model):
+    pass
+
+
