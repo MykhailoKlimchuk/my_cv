@@ -5,7 +5,12 @@
 {% block main %}
 
     <div class="personal_info">
-        {% include 'personal_info.html' %}
+        <div class="info">
+            {% include 'personal_info.html' %}
+        </div>
+        <div class="avatar">
+            {% include 'avatar.html' %}
+        </div>
     </div>
 
 {% endblock %}

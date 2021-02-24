@@ -1,0 +1,46 @@
+html {
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
+
+}
+
+body {
+    margin: 0;
+}
+
+main {
+
+}
+
+.personal_info {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    float:left;
+}
+
+.avatar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #8EA69B;
+
+}
+.avatar__photo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-right: 50px;
+}

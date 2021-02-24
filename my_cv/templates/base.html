@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %} {% endblock %}</title>
 
     {% block links %} {% endblock %}
+    <link rel="stylesheet"  type="text/css" href="{% static '/cv/css/base.css'%}">
+
 </head>
 <body>
     <main>
