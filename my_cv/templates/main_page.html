@@ -5,11 +5,20 @@
 {% block main %}
 
     <div class="personal_info">
-        <div class="info">
-            {% include 'personal_info.html' %}
+        <div class="left_block">
+            <div class="info">
+                {% include 'personal_info.html' %}
+            </div>
+            <div class="skills">
+                {% include 'skills.html' %}
+            </div>
+
+
         </div>
-        <div class="avatar">
-            {% include 'avatar.html' %}
+        <div class="right_block">
+            <div class="avatar">
+                {% include 'avatar.html' %}
+            </div>
         </div>
     </div>
 

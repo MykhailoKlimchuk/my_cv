@@ -13,15 +13,13 @@ main {
 }
 
 .personal_info {
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
-.info {
+left_block {
+    padding-right: 20px;
     position: absolute;
     left: 0;
     top: 0;
@@ -29,14 +27,22 @@ main {
     float:left;
 }
 
-.avatar {
-    position: absolute;
+.right_block {
+    position: fixed;
     right: 0;
     top: 0;
     width: 50%;
     height: 100vh;
     background-color: #8EA69B;
+}
 
+.avatar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #8EA69B;
 }
 .avatar__photo {
     display: block;
